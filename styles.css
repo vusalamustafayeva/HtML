@@ -1,66 +1,49 @@
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    background-color: #0b7674;
-} 
-
-header {
-    background-color: #010b16;
-    color: #ffffff;
-    padding: 0.1em 0;
-    text-align: center;
-    text-decoration: underline;
+    background-color: #f2f2f2;
 }
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 2em;
-}
-
-nav ul li a {
-    color: #f9fafa;
-    text-decoration: none;
-}
-
-section {
-    padding: 1em;
+.container {
     text-align: center;
 }
-
-.product {
-    display: inline-block;
-    margin: 1em;
-    padding: 1em;
-    border: 1px solid #ddd;
-    background-color: #13cebe;
-    border-radius: 59px;
-    width: 200px;
+.logo img {
+    width: 272px;
+    height: 92px;
 }
-
-.product img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 1em;
+.search-box {
+    margin-top: 20px;
 }
-
-footer {
-    background-color: #010b16;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    height: 60px;
+.search-input {
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    outline: none;
+}
+.search-input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #a8a8a8;
+}
+.buttons {
+    margin-top: 20px;
+}
+.btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    outline: none;
+}
+.btn:hover {
+    background-color: #f1f1f1;
+    border: 1px solid #c6c6c6;
 }
